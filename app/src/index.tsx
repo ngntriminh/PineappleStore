@@ -7,15 +7,13 @@ import {
   Link,
 } from "react-router-dom";
 
+// Importing routes
+import Home from "./routes/Home";
+
 const routes: RouteObject[] = [
   {
     path: "/",
-    element: (
-      <div>
-        <h1>Hello World</h1>
-        <Link to="about">About Us</Link>
-      </div>
-    ),
+    element: <Home></Home>,
   },
   {
     path: "about",
